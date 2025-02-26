@@ -119,6 +119,9 @@ conv_handler = ConversationHandler(
     fallbacks=[CommandHandler("cancel", cancel)],
 )
 
+print("Hello"
+      "а")
+
 application.add_handler(conv_handler)  # Добавляем обработчик разговора в приложение
 
 application.run_polling(allowed_updates=Update.ALL_TYPES)  # Запускаем бота до нажатия пользователем Ctrl-C
