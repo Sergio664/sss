@@ -69,6 +69,10 @@ async def save_data_to_file(user_data, photo_file):
         file.write(f"Биография: {user_data['bio']}\n")
 
 
+print("ushc8h")
+
+
+
 # Обработчик ввода биографии
 async def bio(update: Update, context):
     """Сохраняет биографию и завершает разговор."""
@@ -119,8 +123,6 @@ conv_handler = ConversationHandler(
     fallbacks=[CommandHandler("cancel", cancel)],
 )
 
-print("Hello"
-      "а")
 
 application.add_handler(conv_handler)  # Добавляем обработчик разговора в приложение
 
